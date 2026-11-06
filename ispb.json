@@ -1,0 +1,72 @@
+[
+  {
+    "codigo": "001",
+    "nome": "BANCO DO BRASIL S.A.",
+    "ispb": "00000000"
+  },
+  {
+    "codigo": "033",
+    "nome": "BANCO SANTANDER (BRASIL) S.A.",
+    "ispb": "90400888"
+  },
+  {
+    "codigo": "041",
+    "nome": "BANCO DO ESTADO DO RIO GRANDE DO SUL S.A. (BANRISUL)",
+    "ispb": "92702067"
+  },
+  {
+    "codigo": "077",
+    "nome": "BANCO INTER S.A.",
+    "ispb": "00416968"
+  },
+  {
+    "codigo": "104",
+    "nome": "CAIXA ECONOMICA FEDERAL",
+    "ispb": "00360305"
+  },
+  {
+    "codigo": "197",
+    "nome": "STONE INSTITUICAO DE PAGAMENTO S.A.",
+    "ispb": "16501555"
+  },
+  {
+    "codigo": "237",
+    "nome": "BANCO BRADESCO S.A.",
+    "ispb": "60746948"
+  },
+  {
+    "codigo": "260",
+    "nome": "NU PAGAMENTOS S.A. (NUBANK)",
+    "ispb": "18236120"
+  },
+  {
+    "codigo": "341",
+    "nome": "ITAÚ UNIBANCO S.A.",
+    "ispb": "60701190"
+  },
+  {
+    "codigo": "380",
+    "nome": "PICPAY INSTITUICAO DE PAGAMENTO S.A.",
+    "ispb": "22896431"
+  },
+  {
+    "codigo": "422",
+    "nome": "BANCO SAFRA S.A.",
+    "ispb": "58160789"
+  },
+  {
+    "codigo": "745",
+    "nome": "BANCO CITIBANK S.A.",
+    "ispb": "33479023"
+  },
+  {
+    "codigo": "748",
+    "nome": "BANCO COOPERATIVO SICREDI S.A.",
+    "ispb": "01181521"
+  },
+  {
+    "codigo": "756",
+    "nome": "BANCO COOPERATIVO SICOOB S.A.",
+    "ispb": "02038232"
+  }
+]

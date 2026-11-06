@@ -1,0 +1,71 @@
+Codigo Registro00100100                                                           
+Codigo Arquivo 00200201                                                           
+Ident. Arquivo 0030090'REMESSA'                                                   
+Codigo Servico 010011011                                                          
+Ident. Servico 0120260'PAGTOS FORNECED'                                           
+Numero da Conta0270340"05837560"                                                  
+Valida Trailler0350350"N"                                                         
+Brancos        0360370SPACE(02)                                                   
+Cod. Agencia   0380440"0002900"                                                   
+Brancos        0450460space(01)                                                   
+Nome Cliente   0470760SUBSTRING(SM0->M0_NOMECOM,1,30)                             
+Bco.Deposit    0770790"422"                                                       
+Nome Banco     0800940"BANCO SAFRA S/A"                                           
+Data Gravacao  0951000GRAVADATA(dDataBase,.F.)                                    
+Origem         1011010Space(01)                                                   
+Terceiro       1021030Space(02)                                                   
+Brancos        1043870SPACE(284)                                                  
+CNPJ           3883880"N"                                                         
+Num Arquivo    3893940STRZERO(VAL(SEE->EE_ULTDSK),6)                              
+Num Seq. Regist3954000'000001'                                                    
+Codigo Registro00100101                                                           
+Codigo Inscr   0020030iif(len(alltrim(sa2->a2_cgc))>11,"01","02")                 
+Numero Inscr   0040170SM0->M0_CGC                                                 
+Numero Conta   0180250"05837560"                                                  
+Brancos        0260280Space(03)                                                   
+Cod. Agencia   0290350"0002900"                                                   
+Brancos        0360370space(02)                                                   
+Uso Exclusivo  0380620space(25)                                                   
+Cod Fornecedor 0630760AllTrim(SA2->A2_CGC)                                        
+Tipo Documento 0770790Alltrim(SE2->E2_TIPO)                                       
+Num Compromisso0800890SE2->E2_IDCNAB                                              
+Seq. Compromiss0900900INCREMENTA()                                                
+Brancos        0911070SPACE(17)                                                   
+Cod Operacao   1081080"C"                                                         
+Cod Ocorr      1091100IIF(EMPTY(SE2->E2_OCORREN),"01",SE2->E2_OCORREN)            
+Seu Numero     1111200SE2->E2_IDCNAB                                              
+Vencimento     1211260GravaData(SE2->E2_VENCTO,.F.)                               
+Valor          1271392STRZERO(INT(ROUND(SE2->E2_VALOR*100,2)),13)                 
+Tipo Pagamento 1401420"COB"                                                       
+Banco destino  1431450LEFT(ALLTRIM(SE2->E2_CODBAR),3)                             
+Agencia Destino1461520"AAAAAAA"                                                   
+Zeros          1531550"000"                                                       
+Conta Corrente 1561650"CCCCCCCCCC"                                                
+Brancos        1661850SPACE(20)                                                   
+Agencia Pagamen1861920"0002900"                                                   
+Nosso numero   1932082SPACE(16)                                                   
+Brancos        2092470SPACE(39)                                                   
+Portador       2482502LEFT(ALLTRIM(SE2->E2_CODBAR),3)                             
+Abatimento     2512632STRZERO(ROUND(SE2->E2_DESCONT,2),13)                        
+Fornecedor     2642932LEFT(SA2->A2_NOME,30)                                       
+Brancos        2943030SPACE(10)                                                   
+Cod. de Barras 3043470LEFT(SE2->E2_CODBAR,44)                                     
+Juros de Mora  3483600STRZERO(ROUND((SE2->E2_MULTA + SE2->E2_JUROS),2),13)        
+Data Pagamento 3613660GravaData(SE2->E2_VENCREA,.F.)                              
+Vlr Autorizado 3673790STRZERO(INT(ROUND(SE2->E2_VALOR*100,2)),13)                 
+Moeda          3803830"REAL"                                                      
+Carteira       3843870SPACE(04)                                                   
+Especie Documen3883900SPACE(03)                                                   
+Brancos        3913940SPACE(04)                                                   
+Numero Seq reg 3954000incrementa()                                                
+Cod Registro   00100109                                                           
+Brancos        0021240SPACE(123)                                                  
+Valor Total    1251390strzero(int(somavalor()),15)                                
+Brancos        1402480SPACE(109)                                                  
+Tot. Abatimento2492630"000000000000000"                                           
+Brancos        2643450SPACE(82)                                                   
+juros e moras  3463600"000000000000000"                                           
+Brancos        3613640SPACE(04)                                                   
+total valor    3653790strzero(int(somavalor()),15)                                
+Brancos        3803940SPACE(15)                                                   
+Sequencial     3954000incrementa()                                                
